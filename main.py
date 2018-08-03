@@ -7,3 +7,12 @@ def list_to_dict(inp_list):
         else:
             result_dict[inp_list[i]]=1
     return result_dict  
+
+
+def is_list_items_in_dict(inp_list, inp_dict):    
+    result=False
+    for itr in inp_list:
+        if  itr in inp_dict :
+            result=True
+            return result
+    return result
