@@ -16,3 +16,12 @@ def is_list_items_in_dict(inp_list, inp_dict):
             result=True
             return result
     return result
+
+def remove_duplicates_from_str(input_str):
+    seen = set()
+    result = []
+    for c in input_str:
+        if c not in seen:
+            seen.add(c)
+            result.append(c)
+    return "".join(result)
